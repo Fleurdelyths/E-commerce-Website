@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LilithShop - Product's Detail</title>
-
-    <!-- Bootstrap -->
     <link href="/Shop/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- CSS riêng -->
     <link rel="stylesheet" href="style-detail.css" />
   </head>
-
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Lilith Shop</a>
@@ -28,7 +22,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -44,11 +37,8 @@
         </div>
       </div>
     </nav>
-
-    <!-- Nội dung chi tiết -->
     <main class="container my-5 product-detail">
       <div class="row g-4">
-        <!-- Ảnh sản phẩm -->
         <div class="col-md-6 text-center">
           <img
             id="product-image"
@@ -57,14 +47,11 @@
             class="img-fluid rounded shadow-sm"
           />
         </div>
-
-        <!-- Thông tin sản phẩm -->
         <div class="col-md-6 info-box">
           <h2 id="product-name" class="fw-bold mb-3"></h2>
           <p id="product-price" class="text-danger fw-bold fs-4 mb-4"></p>
           <p id="product-desc" class="text-muted"></p>
 
-          <!-- Chọn size -->
           <div class="mb-3">
             <label class="form-label fw-semibold">Chọn size:</label>
             <select class="form-select w-50">
@@ -74,14 +61,10 @@
               <option>Size XL</option>
             </select>
           </div>
-
-          <!-- Chọn số lượng -->
           <div class="mb-3">
             <label class="form-label fw-semibold">Số lượng:</label>
             <input type="number" class="form-control w-25" value="1" min="1" />
           </div>
-
-          <!-- Nút thao tác -->
           <div class="d-flex gap-2 mt-4">
             <button class="btn btn-success px-4">Thêm vào giỏ</button>
             <a href="product.html" class="btn btn-dark">Quay lại</a>
@@ -89,19 +72,13 @@
         </div>
       </div>
     </main>
-
-    <!-- Footer -->
     <footer class="bg-dark text-light text-center py-2 mt-auto">
       <div class="container">
         <p class="mb-1">&copy; 2025 Lilith Shop</p>
         <p class="small mb-0">Thiết kế bởi Lilith Focalors 🌙</p>
       </div>
     </footer>
-
-    <!-- Bootstrap JS -->
     <script src="/Shop/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JS sản phẩm -->
     <script src="product-detail.js"></script>
   </body>
 </html>
