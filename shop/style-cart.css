@@ -4,9 +4,15 @@ body {
   background-image: url(../shop/image/tường.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* cho hiệu ứng parallax nhẹ */
+  background-attachment: fixed;
   color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+.info-box {
+  background-color: #605252;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

@@ -59,6 +59,51 @@
         </button>
       </div>
     </div>
+
+    <div class="info-box container mt-5 p-4 border rounded shadow-sm">
+      <h4 class="mb-3">📋 Thông tin khách hàng</h4>
+
+      <form id="customer-form">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Họ và tên</label>
+            <input type="text" class="form-control" placeholder="Nhập họ tên" />
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Số điện thoại</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nhập số điện thoại"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Địa chỉ nhận hàng</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Ví dụ: 123 abc, Quận 456, Thành Phố xyz"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Ghi chú (không bắt buộc)</label>
+          <textarea
+            class="form-control"
+            rows="3"
+            placeholder="Nhập ghi chú..."
+          ></textarea>
+        </div>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-primary btn-lg">Đặt hàng</button>
+        </div>
+      </form>
+    </div>
+
     <footer class="bg-dark text-light text-center py-2 mt-auto">
       <div class="container">
         <p class="mb-1">&copy; 2025 Lilith Shop</p>

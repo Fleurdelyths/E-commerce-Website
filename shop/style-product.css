@@ -4,7 +4,7 @@ body {
   background-image: url(../shop/image/gỗ.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* cho hiệu ứng parallax nhẹ */
+  background-attachment: fixed;
   color: white;
   display: flex;
   flex-direction: column;

@@ -4,13 +4,13 @@ body {
   background-image: url(../shop/image/ao.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* cho hiệu ứng parallax nhẹ */
+  background-attachment: fixed;
   color: white;
 }
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* chiều cao ít nhất = chiều cao màn hình */
+  min-height: 100vh;
 }
 
 footer {
@@ -22,10 +22,10 @@ h1 {
   color: white;
   display: inline-block;
   padding: 12px 24px;
-  border: 4px groove rgb(0, 0, 0); /* 👈 viền kiểu groove */
+  border: 4px groove rgb(0, 0, 0);
   border-radius: 10px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.3); /* nhẹ nhàng cho tương phản */
+  background: rgba(0, 0, 0, 0.3);
 }
 p.slogan {
   font-size: 35px;
