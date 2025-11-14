@@ -1,4 +1,3 @@
-// === PRODUCT DATA ===
 const products = [
   {
     id: 1,
@@ -114,7 +113,6 @@ const products = [
   },
 ];
 
-// === HELPER: Add to cart ===
 function addToCart(product, size = "M", quantity = 1) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const existing = cart.find(
@@ -126,7 +124,6 @@ function addToCart(product, size = "M", quantity = 1) {
   alert("✅ Đã thêm vào giỏ hàng!");
 }
 
-// === PRODUCT DETAIL PAGE ===
 if (document.getElementById("product-image")) {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = parseInt(urlParams.get("id"));
@@ -147,21 +144,15 @@ if (document.getElementById("product-image")) {
     addToCart(product, size, quantity);
   });
 }
+const cards = document.querySelectorAll(".card");
 
-// === PRODUCT LIST PAGE (product.html) ===
-if (document.querySelectorAll(".card .btn-success")) {
-  const buttons = document.querySelectorAll(".card .btn-success");
-  buttons.forEach((btn, idx) => {
-    // Bỏ nút "Xem chi tiết"
-    if (btn.textContent.trim() === "Xem chi tiết") return;
-    btn.addEventListener("click", () => {
-      const product = products[idx];
-      addToCart(product); // default size M, quantity 1
-    });
+cards.forEach((card, index) => {
+  const addBtn = card.querySelector("button.btn-success");
+  addBtn.addEventListener("click", () => {
+    addToCart(products[index]);
   });
-}
+});
 
-// === CART PAGE ===
 if (document.getElementById("cart-items")) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartContainer = document.getElementById("cart-items");
