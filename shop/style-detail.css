@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-image: url(/shop/image/bàn.jpg);
+  background-image: url(../shop/image/bàn.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
