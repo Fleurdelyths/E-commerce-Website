@@ -1,19 +1,22 @@
 html,
 body {
   height: 100%;
+  background-color: #000;
   background-image: url(../shop/image/bàn.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  will-change: background-image;
 }
 
 .info-box {
   background: rgba(229, 213, 213, 0.45);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 12px;
   padding: 25px;
   color: #fff;
@@ -32,6 +35,8 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  will-change: contents;
 }
 
 .product-image-wrapper img {
