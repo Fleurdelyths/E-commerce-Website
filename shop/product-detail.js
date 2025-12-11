@@ -59,61 +59,61 @@ const products = [
     id: 9,
     name: "Áo sweater",
     price: "300.000đ",
-    img: "../shop/image/sweater.jpg",
+    img: "/shop/image/sweater.jpg",
     desc: "Áo sweater unisex, giữ ấm tốt.",
   },
   {
     id: 10,
     name: "Váy công sở",
     price: "420.000đ",
-    img: "../shop/image/office dress.jpg",
+    img: "/shop/image/office dress.jpg",
     desc: "Váy công sở thanh lịch, tôn dáng.",
   },
   {
     id: 11,
     name: "Áo hoodie",
     price: "380.000đ",
-    img: "../shop/image/hoodie.jpg",
+    img: "/shop/image/hoodie.jpg",
     desc: "Áo hoodie cotton mềm, form rộng.",
   },
   {
     id: 12,
     name: "Quần tây nam",
     price: "350.000đ",
-    img: "../shop/image/touser.jpg",
+    img: "/shop/image/touser.jpg",
     desc: "Quần tây công sở, vải mịn.",
   },
   {
     id: 13,
     name: "Áo croptop",
     price: "290.000đ",
-    img: "../shop/image/croptop.jpg",
+    img: "/shop/image/croptop.jpg",
     desc: "Áo croptop năng động, trẻ trung.",
   },
   {
     id: 14,
     name: "Quần jeans nam",
     price: "450.000đ",
-    img: "../shop/image/men's jean.jpg",
+    img: "/shop/image/men's jean.jpg",
     desc: "Quần jeans nam form slim, co giãn nhẹ.",
   },
   {
     id: 15,
     name: "Đầm dạ hội",
     price: "720.000đ",
-    img: "../shop/image/evening dress.jpg",
+    img: "/shop/image/evening dress.jpg",
     desc: "Đầm dạ hội cao cấp, sang trọng.",
   },
   {
     id: 16,
     name: "Áo len nữ",
     price: "330.000đ",
-    img: "../shop/image/woman's sweater.jpg",
+    img: "/shop/image/woman's sweater.jpg",
     desc: "Áo len mềm, phong cách vintage.",
   },
 ];
 
-function addToCart(product, size = "M", quantity = 1) {
+function addToCart(product, size = "Size M", quantity = 1) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const existing = cart.find(
     (item) => item.id === product.id && item.size === size

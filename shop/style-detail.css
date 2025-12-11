@@ -10,13 +10,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-#product-image {
-  width: auto;
-  height: 380px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
+
 .info-box {
   background: rgba(229, 213, 213, 0.45);
   backdrop-filter: blur(5px);
@@ -24,4 +18,25 @@ body {
   padding: 25px;
   color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.product-image-wrapper {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 5;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
